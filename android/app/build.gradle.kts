@@ -55,6 +55,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            applicationIdSuffix = ".debug"
+            resValue("string", "app_name", "Mars Timer DEBUG")
+        }
     }
 }
 
