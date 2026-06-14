@@ -106,7 +106,7 @@ class TimerScreenContent extends StatelessWidget {
                           padding: const EdgeInsets.all(16),
                           child: Text(
                             '-',
-                            style: AppTheme.notoSansThin.copyWith(
+                            style: AppTheme.outfitThin.copyWith(
                               fontSize: 50,
                               color: AppTheme.white.withValues(
                                 alpha: provider.timerState == TimerState.idle ? 0.5 : 0,
@@ -124,7 +124,7 @@ class TimerScreenContent extends StatelessWidget {
                               ? _formatDuration(provider.totalMeditationMs + (provider.overtimeAccepted ? provider.overtimeMs : 0))
                               : _formatTime(provider.remainingTime),
                           style: provider.isWarmup
-                              ? AppTheme.notoSansThin.copyWith(
+                              ? AppTheme.outfitThin.copyWith(
                                   fontSize: 72,
                                   color: AppTheme.gray,
                                   fontFeatures: const [
@@ -132,14 +132,14 @@ class TimerScreenContent extends StatelessWidget {
                                   ],
                                 )
                               : provider.isPaused
-                                  ? AppTheme.notoSansThickerThin.copyWith(
+                                  ? AppTheme.outfitThickerThin.copyWith(
                                       fontSize: 72,
                                       color: AppTheme.gray,
                                       fontFeatures: const [
                                         FontFeature.tabularFigures(),
                                       ],
                                     )
-                                  : AppTheme.notoSansThickerThin.copyWith(
+                                  : AppTheme.outfitThickerThin.copyWith(
                                       fontSize: 72,
                                       color: AppTheme.white,
                                       fontFeatures: const [
@@ -158,7 +158,7 @@ class TimerScreenContent extends StatelessWidget {
                           padding: const EdgeInsets.all(16),
                           child: Text(
                             '+',
-                            style: AppTheme.notoSansThin.copyWith(
+                            style: AppTheme.outfitThin.copyWith(
                               fontSize: 50,
                               color: AppTheme.white.withValues(
                                 alpha: provider.timerState == TimerState.idle ? 0.5 : 0,
@@ -194,7 +194,7 @@ class TimerScreenContent extends StatelessWidget {
                               alignment: Alignment.center,
                               child: Text(
                                 '5s',
-                                style: AppTheme.notoSansLight.copyWith(
+                                style: AppTheme.outfitLight.copyWith(
                                   fontSize: 16,
                                   fontFeatures: const [
                                     FontFeature.tabularFigures(),
@@ -222,7 +222,7 @@ class TimerScreenContent extends StatelessWidget {
                               alignment: Alignment.center,
                               child: Text(
                                 '$time',
-                                style: AppTheme.notoSansLight.copyWith(
+                                style: AppTheme.outfitLight.copyWith(
                                   fontSize: 16,
                                   fontFeatures: const [
                                     FontFeature.tabularFigures(),
@@ -260,7 +260,7 @@ class TimerScreenContent extends StatelessWidget {
                                   ),
                                   child: Text(
                                     '−',
-                                    style: AppTheme.notoSansThickerThin.copyWith(
+                                    style: AppTheme.outfitThickerThin.copyWith(
                                       fontSize: 22,
                                       color: AppTheme.gray,
                                     ),
@@ -272,7 +272,7 @@ class TimerScreenContent extends StatelessWidget {
                                 child: Text(
                                   '${provider.prepTime}s delay',
                                   textAlign: TextAlign.center,
-                                  style: AppTheme.notoSansThickerThin.copyWith(
+                                  style: AppTheme.outfitThickerThin.copyWith(
                                     fontSize: 22,
                                     color: AppTheme.white.withValues(alpha: 0.6),
                                   ),
@@ -287,7 +287,7 @@ class TimerScreenContent extends StatelessWidget {
                                   ),
                                   child: Text(
                                     '+',
-                                    style: AppTheme.notoSansThickerThin.copyWith(
+                                    style: AppTheme.outfitThickerThin.copyWith(
                                       fontSize: 22,
                                       color: AppTheme.gray,
                                     ),
@@ -303,7 +303,7 @@ class TimerScreenContent extends StatelessWidget {
                               padding: const EdgeInsets.all(12),
                               child: Text(
                                 '+ delay',
-                                style: AppTheme.notoSansThickerThin.copyWith(
+                                style: AppTheme.outfitThickerThin.copyWith(
                                   fontSize: 22,
                                   color: AppTheme.gray.withValues(alpha: 0.6),
                                 ),
@@ -328,7 +328,7 @@ class TimerScreenContent extends StatelessWidget {
                       child: Center(
                         child: Text(
                           _formatOvertime(provider.overtimeMs),
-                          style: AppTheme.notoSansThin.copyWith(
+                          style: AppTheme.outfitThin.copyWith(
                             fontSize: 36,
                             fontFeatures: const [FontFeature.tabularFigures()],
                             color: provider.overtimeAccepted
@@ -355,7 +355,7 @@ class TimerScreenContent extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                             child: Text(
                               'discard',
-                              style: AppTheme.notoSansThin.copyWith(
+                              style: AppTheme.outfitThin.copyWith(
                                 fontSize: 24,
                                 letterSpacing: 2,
                                 color: AppTheme.white,
@@ -370,7 +370,7 @@ class TimerScreenContent extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                             child: Text(
                               'save',
-                              style: AppTheme.notoSansThin.copyWith(
+                              style: AppTheme.outfitThin.copyWith(
                                 fontSize: 24,
                                 letterSpacing: 2,
                                 color: AppTheme.white,
@@ -407,7 +407,7 @@ class TimerScreenContent extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                                 child: Text(
                                   'clear',
-                                  style: AppTheme.notoSansThin.copyWith(
+                                  style: AppTheme.outfitThin.copyWith(
                                     fontSize: 24,
                                     letterSpacing: 2,
                                     color: AppTheme.white,
@@ -423,7 +423,7 @@ class TimerScreenContent extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                                   child: Text(
                                     'save',
-                                    style: AppTheme.notoSansThin.copyWith(
+                                    style: AppTheme.outfitThin.copyWith(
                                       fontSize: 24,
                                       letterSpacing: 2,
                                       color: AppTheme.white,
@@ -460,7 +460,7 @@ class TimerScreenContent extends StatelessWidget {
             keyboardType: TextInputType.number,
             autofocus: true,
             textAlign: TextAlign.center,
-            style: AppTheme.notoSansThin.copyWith(
+            style: AppTheme.outfitThin.copyWith(
               fontSize: 48,
               color: AppTheme.white,
               fontFeatures: const [FontFeature.tabularFigures()],
@@ -468,12 +468,12 @@ class TimerScreenContent extends StatelessWidget {
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: '—',
-              hintStyle: AppTheme.notoSansThin.copyWith(
+              hintStyle: AppTheme.outfitThin.copyWith(
                 fontSize: 48,
                 color: AppTheme.gray,
               ),
               suffixText: 'min',
-              suffixStyle: AppTheme.notoSansLight.copyWith(
+              suffixStyle: AppTheme.outfitLight.copyWith(
                 fontSize: 16,
                 color: AppTheme.gray,
               ),

@@ -72,18 +72,9 @@ flutter:
     - assets/icon/
 
   fonts:
-    - family: NotoSans
+    - family: Outfit
       fonts:
-        - asset: assets/fonts/NotoSans-Thin.ttf
-          weight: 100
-        - asset: assets/fonts/NotoSans-ExtraLight.ttf
-          weight: 200
-        - asset: assets/fonts/NotoSans-Light.ttf
-          weight: 300
-        - asset: assets/fonts/NotoSans-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/NotoSans-Medium.ttf
-          weight: 500
+        - asset: assets/fonts/Outfit-VariableFont_wght.ttf
 
 
 flutter_launcher_icons:

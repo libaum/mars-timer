@@ -36,7 +36,7 @@ class StatisticsScreen extends StatelessWidget {
                               horizontal: 16, vertical: 8),
                           child: Text(
                             'seed',
-                            style: AppTheme.notoSansLight.copyWith(
+                            style: AppTheme.outfitLight.copyWith(
                               fontSize: 12,
                               color: AppTheme.darkGray,
                             ),
@@ -51,7 +51,7 @@ class StatisticsScreen extends StatelessWidget {
                               horizontal: 16, vertical: 8),
                           child: Text(
                             'clear',
-                            style: AppTheme.notoSansLight.copyWith(
+                            style: AppTheme.outfitLight.copyWith(
                               fontSize: 12,
                               color: AppTheme.darkGray,
                             ),
@@ -95,7 +95,7 @@ class StatisticsContent extends StatelessWidget {
               children: [
                 Text(
                   'no sessions yet',
-                  style: AppTheme.notoSansLight.copyWith(
+                  style: AppTheme.outfitLight.copyWith(
                     fontSize: 20,
                     color: AppTheme.gray,
                   ),
@@ -103,7 +103,7 @@ class StatisticsContent extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   'start your first meditation',
-                  style: AppTheme.notoSansLight.copyWith(
+                  style: AppTheme.outfitLight.copyWith(
                     fontSize: 13,
                     color: AppTheme.darkGray,
                   ),
@@ -144,7 +144,7 @@ class StatisticsContent extends StatelessWidget {
 
               Text(
                 'avg ${avgMinutes.round()} min / session',
-                style: AppTheme.notoSansLight.copyWith(
+                style: AppTheme.outfitLight.copyWith(
                   fontSize: 13,
                   color: AppTheme.gray,
                 ),
@@ -164,7 +164,7 @@ class StatisticsContent extends StatelessWidget {
 
               Text(
                 'last 30 days',
-                style: AppTheme.notoSansLight.copyWith(
+                style: AppTheme.outfitLight.copyWith(
                   fontSize: 11,
                   letterSpacing: 1,
                   color: AppTheme.darkGray,
@@ -190,7 +190,7 @@ class _StatCell extends StatelessWidget {
       children: [
         Text(
           value,
-          style: AppTheme.notoSansThin.copyWith(
+          style: AppTheme.outfitThin.copyWith(
             fontSize: 48,
             color: AppTheme.white,
             fontFeatures: const [FontFeature.tabularFigures()],
@@ -199,7 +199,7 @@ class _StatCell extends StatelessWidget {
         const SizedBox(height: 2),
         Text(
           label,
-          style: AppTheme.notoSansLight.copyWith(
+          style: AppTheme.outfitLight.copyWith(
             fontSize: 12,
             letterSpacing: 1,
             color: AppTheme.gray,

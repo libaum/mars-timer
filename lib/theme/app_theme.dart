@@ -6,29 +6,29 @@ class AppTheme {
   static const Color gray = Color(0xFF808080);
   static const Color darkGray = Color(0xFF404040);
 
-  static const String _fontFamily = 'NotoSans';
+  static const String _fontFamily = 'Outfit';
 
-  static TextStyle get notoSansLight => const TextStyle(
+  static TextStyle get outfitLight => const TextStyle(
         fontFamily: _fontFamily,
         fontWeight: FontWeight.w300,
       );
 
-  static TextStyle get notoSansRegular => const TextStyle(
+  static TextStyle get outfitRegular => const TextStyle(
         fontFamily: _fontFamily,
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle get notoSansMedium => const TextStyle(
+  static TextStyle get outfitMedium => const TextStyle(
         fontFamily: _fontFamily,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle get notoSansThin => const TextStyle(
+  static TextStyle get outfitThin => const TextStyle(
         fontFamily: _fontFamily,
         fontWeight: FontWeight.w100,
       );
 
-  static TextStyle get notoSansThickerThin => const TextStyle(
+  static TextStyle get outfitThickerThin => const TextStyle(
         fontFamily: _fontFamily,
         fontWeight: FontWeight.w200,
       );
