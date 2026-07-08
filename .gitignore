@@ -87,3 +87,6 @@ windows/flutter/generated_plugins.cmake
 macos/Flutter/ephemeral/
 macos/Flutter/GeneratedPluginRegistrant.h
 macos/Flutter/GeneratedPluginRegistrant.m
+
+# Archived release APKs (install_release.sh)
+apk_archive/

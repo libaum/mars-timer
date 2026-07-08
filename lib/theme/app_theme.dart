@@ -47,16 +47,16 @@ class AppTheme {
           onSurface: white,
         ),
         textTheme: TextTheme(
-          displayLarge: notoSansLight.copyWith(fontSize: 57, color: white),
-          displayMedium: notoSansLight.copyWith(fontSize: 45, color: white),
-          titleMedium: notoSansMedium.copyWith(fontSize: 16, color: white),
-          bodyLarge: notoSansRegular.copyWith(
+          displayLarge: outfitLight.copyWith(fontSize: 57, color: white),
+          displayMedium: outfitLight.copyWith(fontSize: 45, color: white),
+          titleMedium: outfitMedium.copyWith(fontSize: 16, color: white),
+          bodyLarge: outfitRegular.copyWith(
             fontSize: 16,
             color: white,
             height: 1.5,
             letterSpacing: 0.5,
           ),
-          labelMedium: notoSansMedium.copyWith(
+          labelMedium: outfitMedium.copyWith(
             fontSize: 12,
             color: white,
             letterSpacing: 2,
