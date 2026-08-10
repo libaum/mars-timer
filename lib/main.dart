@@ -31,11 +31,19 @@ void main() async {
   final audioService = AudioService();
 
   // Set system UI overlay style
+  // On Android 15+ edge-to-edge is forced, so systemNavigationBarColor is
+  // ignored no matter what we set it to — the bar is always transparent and
+  // the black scaffold shows through. systemNavigationBarContrastEnforced
+  // must stay false, otherwise Android draws a light scrim over it. The
+  // black-icon-with-white-outline look on some OEM skins (e.g. Samsung One
+  // UI, 3-button nav) is the OS's own icon-legibility rendering and isn't
+  // controllable through this API.
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
     statusBarIconBrightness: Brightness.light,
     systemNavigationBarColor: Colors.transparent,
     systemNavigationBarIconBrightness: Brightness.light,
+    systemNavigationBarContrastEnforced: false,
   ));
 
   // Hide status bar, keep navigation bar
