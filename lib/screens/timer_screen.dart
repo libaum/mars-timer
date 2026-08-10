@@ -289,11 +289,12 @@ class TimerScreenContent extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               GestureDetector(
+                                behavior: HitTestBehavior.opaque,
                                 onTap: provider.decrementPrepTime,
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(
-                                    horizontal: 20,
-                                    vertical: 12,
+                                    horizontal: 24,
+                                    vertical: 24,
                                   ),
                                   child: Text(
                                     '−',
@@ -316,11 +317,12 @@ class TimerScreenContent extends StatelessWidget {
                                 ),
                               ),
                               GestureDetector(
+                                behavior: HitTestBehavior.opaque,
                                 onTap: provider.incrementPrepTime,
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(
-                                    horizontal: 20,
-                                    vertical: 12,
+                                    horizontal: 24,
+                                    vertical: 24,
                                   ),
                                   child: Text(
                                     '+',
@@ -387,9 +389,10 @@ class TimerScreenContent extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         GestureDetector(
+                          behavior: HitTestBehavior.opaque,
                           onTap: provider.discardFinishedSession,
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                             child: Text(
                               'discard',
                               style: AppTheme.outfitThin.copyWith(
@@ -402,9 +405,10 @@ class TimerScreenContent extends StatelessWidget {
                         ),
                         const SizedBox(width: 24),
                         GestureDetector(
+                          behavior: HitTestBehavior.opaque,
                           onTap: provider.saveFinishedSession,
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                             child: Text(
                               'save',
                               style: AppTheme.outfitThin.copyWith(
@@ -439,9 +443,10 @@ class TimerScreenContent extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             GestureDetector(
+                              behavior: HitTestBehavior.opaque,
                               onTap: provider.stopTimer,
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                                 child: Text(
                                   'clear',
                                   style: AppTheme.outfitThin.copyWith(
@@ -455,9 +460,10 @@ class TimerScreenContent extends StatelessWidget {
                             if (canSave) ...[
                               const SizedBox(width: 24),
                               GestureDetector(
+                                behavior: HitTestBehavior.opaque,
                                 onTap: provider.savePartialSession,
                                 child: Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                                   child: Text(
                                     'save',
                                     style: AppTheme.outfitThin.copyWith(
