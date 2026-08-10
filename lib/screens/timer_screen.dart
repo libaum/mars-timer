@@ -145,14 +145,14 @@ class TimerScreenContent extends StatelessWidget {
                                   ],
                                 )
                               : provider.isPaused
-                                  ? AppTheme.outfitThickerThin.copyWith(
+                                  ? AppTheme.outfitThin.copyWith(
                                       fontSize: 72,
                                       color: AppTheme.gray,
                                       fontFeatures: const [
                                         FontFeature.tabularFigures(),
                                       ],
                                     )
-                                  : AppTheme.outfitThickerThin.copyWith(
+                                  : AppTheme.outfitThin.copyWith(
                                       fontSize: 72,
                                       color: AppTheme.white,
                                       fontFeatures: const [

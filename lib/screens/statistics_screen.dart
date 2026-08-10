@@ -17,8 +17,6 @@ class StatisticsScreen extends StatelessWidget {
             StatisticsContent(
               totalMinutes: provider.totalMinutes,
               history: provider.sessionHistory,
-              streak: provider.currentStreak,
-              avgMinutes: provider.averageSessionMinutes,
             ),
             if (kDebugMode && provider.debugControlsVisible)
               Positioned(
@@ -72,15 +70,11 @@ class StatisticsScreen extends StatelessWidget {
 class StatisticsContent extends StatelessWidget {
   final int totalMinutes;
   final List<MeditationSession> history;
-  final int streak;
-  final double avgMinutes;
 
   const StatisticsContent({
     super.key,
     required this.totalMinutes,
     required this.history,
-    required this.streak,
-    required this.avgMinutes,
   });
 
   @override
@@ -134,20 +128,9 @@ class StatisticsContent extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _StatCell(value: '$streak', label: 'day streak'),
-                  _StatCell(value: '$totalDays', label: 'active days'),
+                  _StatCell(value: '$totalDays', label: 'days meditated'),
                   _StatCell(value: '$totalMinutes', label: 'minutes'),
                 ],
-              ),
-
-              const SizedBox(height: 16),
-
-              Text(
-                'avg ${avgMinutes.round()} min / session',
-                style: AppTheme.outfitLight.copyWith(
-                  fontSize: 13,
-                  color: AppTheme.gray,
-                ),
               ),
 
               const SizedBox(height: 56),
