@@ -29,6 +29,11 @@ class TimerProvider extends ChangeNotifier {
   bool _wasPausedDuringPrep = false;
   bool _isTestDuration = false;
 
+  // Debug-only affordances (5s/OT quick buttons, stats seed/clear) are
+  // hidden behind this toggle so clean screenshots can be taken from a
+  // debug build without rebuilding in release mode.
+  bool _debugControlsVisible = true;
+
   Timer? _timer;
   int _targetTime = 0;
   TimerState _previousState = TimerState.idle;
@@ -73,6 +78,7 @@ class TimerProvider extends ChangeNotifier {
   List<MeditationSession> get sessionHistory => _sessionHistory;
 
   List<int> get quickSelectSlots => _quickSelectSlots;
+  bool get debugControlsVisible => _debugControlsVisible;
 
   int get currentStreak {
     if (_sessionHistory.isEmpty) return 0;
@@ -216,8 +222,8 @@ class TimerProvider extends ChangeNotifier {
     // Wakelock stays on — user may still be meditating during overtime
   }
 
-  void _startOvertimeCounter() {
-    final startTime = DateTime.now().millisecondsSinceEpoch;
+  void _startOvertimeCounter({int initialMs = 0}) {
+    final startTime = DateTime.now().millisecondsSinceEpoch - initialMs;
     _overtimeTimer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
       _overtimeMs = DateTime.now().millisecondsSinceEpoch - startTime;
       notifyListeners();
@@ -367,11 +373,32 @@ class TimerProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Debug-only: show/hide the 5s/OT quick buttons and stats seed/clear
+  /// controls, for taking clean screenshots without a release build.
+  void setDebugControlsVisible(bool visible) {
+    _debugControlsVisible = visible;
+    notifyListeners();
+  }
+
   void setTestDuration() {
     _isTestDuration = true;
     _meditationTime = 1;
     _remainingTime = 5 * 1000;
     notifyListeners();
+  }
+
+  /// Debug-only: jump straight to the overtime screen for screenshots
+  /// (skips waiting out the full meditation + overtime).
+  void debugJumpToOvertime() {
+    _timer?.cancel();
+    _overtimeTimer?.cancel();
+    _isTestDuration = false;
+    _meditationTime = 20;
+    _timerState = TimerState.finished;
+    _remainingTime = 0;
+    _overtimeAccepted = false;
+    notifyListeners();
+    _startOvertimeCounter(initialMs: 5 * 60 * 1000 + 35 * 1000);
   }
 
   /// Debug-only: insert ~30 days of varied meditation sessions for UI testing.

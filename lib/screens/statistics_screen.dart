@@ -20,7 +20,7 @@ class StatisticsScreen extends StatelessWidget {
               streak: provider.currentStreak,
               avgMinutes: provider.averageSessionMinutes,
             ),
-            if (kDebugMode)
+            if (kDebugMode && provider.debugControlsVisible)
               Positioned(
                 left: 0,
                 right: 0,

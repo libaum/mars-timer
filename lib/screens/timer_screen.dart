@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/timer_provider.dart';
 import '../theme/app_theme.dart';
 import 'statistics_screen.dart';
+import 'debug_settings_screen.dart';
 
 class TimerScreen extends StatefulWidget {
   const TimerScreen({super.key});
@@ -79,6 +80,18 @@ class TimerScreenContent extends StatelessWidget {
             onShowStats();
           }
         },
+        onVerticalDragEnd: kDebugMode
+            ? (details) {
+                final velocity = details.primaryVelocity ?? 0;
+                if (provider.isIdle && velocity < -300) {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const DebugSettingsScreen(),
+                    ),
+                  );
+                }
+              }
+            : null,
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(top: 24),
@@ -180,7 +193,7 @@ class TimerScreenContent extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        if (kDebugMode)
+                        if (kDebugMode && provider.debugControlsVisible)
                           GestureDetector(
                             onTap: provider.setTestDuration,
                             child: Container(
@@ -194,6 +207,30 @@ class TimerScreenContent extends StatelessWidget {
                               alignment: Alignment.center,
                               child: Text(
                                 '5s',
+                                style: AppTheme.outfitLight.copyWith(
+                                  fontSize: 16,
+                                  fontFeatures: const [
+                                    FontFeature.tabularFigures(),
+                                  ],
+                                  color: AppTheme.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        if (kDebugMode && provider.debugControlsVisible)
+                          GestureDetector(
+                            onTap: provider.debugJumpToOvertime,
+                            child: Container(
+                              width: 56,
+                              height: 56,
+                              margin: const EdgeInsets.symmetric(horizontal: 8),
+                              decoration: BoxDecoration(
+                                color: AppTheme.darkGray,
+                                borderRadius: BorderRadius.circular(28),
+                              ),
+                              alignment: Alignment.center,
+                              child: Text(
+                                'OT',
                                 style: AppTheme.outfitLight.copyWith(
                                   fontSize: 16,
                                   fontFeatures: const [
