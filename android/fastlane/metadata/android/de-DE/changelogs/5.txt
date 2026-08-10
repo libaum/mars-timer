@@ -1,0 +1,2 @@
+Neue Schriftart, überarbeitetes Icon und Splash-Screen.
+Größere Tipp-Flächen bei Verzögern/Speichern/Löschen.

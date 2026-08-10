@@ -1,0 +1,2 @@
+New font, redesigned icon and splash screen.
+Bigger tap targets for the delay/save/clear buttons.
