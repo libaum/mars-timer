@@ -1,16 +1,11 @@
-<b>Dein Fokus gehört der Meditation, nicht dem Display.</b>
+Ein minimalistischer Timer fürs Meditieren, gebaut, um hinter deiner Praxis zu verschwinden. Keine geführten Stimmen, keine Gamification, keine Menüs. Nur ein Gong zum Start und einer zum Ende.
 
-Meditation soll den Geist klären, nicht durch komplexe Menüs ablenken.
+- Quick-Select-Zeiten, die du dir selbst einrichtest, oder minutengenau anpassbar
+- Eine optionale Verzögerung vor dem Gong, damit du dich erst setzen kannst
+- Bleib sitzen, über den Gong hinaus: die Überzeit zählt trotzdem mit
+- Minuten und Tage meditiert, keine Streaks. Einfach eine stille Aufzeichnung, kein Zwang.
+- Kein Abo, kein Account, kein Tracking. Nichts verlässt dein Handy.
 
-<b>Mars Timer</b> ist die Antwort auf überladene Achtsamkeits-Apps. Keine geführten Stimmen, keine Abos, kein unnötiger Lärm. Nur ein einfaches, elegantes Werkzeug, das dir hilft, eine Routine aufzubauen.
+Ich habe jahrelang mit Apps meditiert, die mit jedem Update voller wurden. Ich wollte einfach nur einen Timer, keinen Streak, den ich aufrechterhalten muss, nichts, in dem ich mich verliere. Meditation passiert in dieser einen Sitzung, nicht wegen der letzten oder für die nächste.
 
-<b>Warum Mars Timer?</b>
-Die meisten Timer sind vollgestopft mit Funktionen, die deine Aufmerksamkeit binden. Mars Timer hält sich zurück, damit du dich auf das Wesentliche konzentrieren kannst: Deinen Atem.
-
-<b>Funktionen:</b>
-• <b>Null Ablenkung:</b> Ein klares, dunkles Interface (OLED-optimiert), das deine Augen und deinen Fokus schont.
-• <b>Intelligente Verzögerung (Delay):</b> Stelle eine Vorlaufzeit ein (z. B. 30 Sek.), um dich bequem hinzusetzen, bevor der Gong ertönt und die Zeit läuft.
-• <b>Minimalistische Statistik:</b> Behalte deine Streaks und Gesamtzeit im Blick, ohne dich in Daten zu verlieren.
-• <b>Datenschutz:</b> Wir tracken dich nicht. Kein Account, keine Cloud, keine Datensammlung. Deine Ruhe gehört dir.
-
-Hol dir deinen Fokus zurück. Lade Mars Timer und atme einfach durch.
+Mars — Minimalist And Really Simple. Eine wachsende Familie kleiner, ruhiger Tools nach einer Idee: ein Problem gut lösen und nie um deine Aufmerksamkeit kämpfen. Keine Werbung, kein Tracking, nichts, das dich fesseln soll. Von einer Person gemacht, aus Überzeugung — Werkzeuge, die für dich arbeiten, nicht gegen dich.

@@ -1,17 +1,11 @@
-<b>Focus on your breath, not the app.</b>
+A minimalist timer for meditation, built to disappear behind your practice. No guided voices, no gamification, no menus. Just a bell to start and a bell to end.
 
-Meditation should be about clearing your mind, not navigating complex menus. 
+- Quick-select durations, editable to fit your practice, or adjust by the minute
+- An optional delay before the bell, so you have time to settle in
+- Keep sitting past the bell: overtime still counts toward your total
+- Minutes and days meditated, no streaks. Just a quiet record, not something to keep up.
+- No subscription, no account, no tracking. Nothing leaves your phone.
 
-<b>Mars Timer</b> is the antidote to gamified wellness apps. No guided voices, no subscriptions, no distractions. Just a simple, elegant tool to help you build a consistent practice.
+I meditated for years with apps that got more cluttered every update. I just wanted a timer, no streak to keep up, nothing to get lost in. Meditation happens in this sitting, not because of the last one or for the next.
 
-<b>Why Mars Timer?</b>
-Most meditation apps are cluttered with features that steal your attention. Mars Timer gets out of your way so you can go inward.
-
-<b>Key Features:</b>
-• <b>Zero Distractions:</b> A clean, black OLED-friendly interface that respects your focus.
-• <b>Smart Delay:</b> Set a "preparation time" (e.g., 10s or 1m) to get comfortable before the session actually begins.
-• <b>Minimalist Stats:</b> Track your streaks and total mindfulness time without obsessing over data.
-• <b>Privacy First:</b> We don't track you. No accounts, no cloud sync, no data collection. Your peace of mind stays on your device.
-• <b>Battery Efficient:</b> Optimized for minimal power consumption.
-
-Reclaim your headspace. Download Mars Timer and just breathe.
+Mars — Minimalist And Really Simple. A growing family of small, calm tools built around one idea: solve one problem well, and never fight for your attention. No ads, no tracking, nothing built to keep you hooked. Made by one person, out of conviction — tools that work for you, not on you.
