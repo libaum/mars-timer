@@ -90,3 +90,6 @@ macos/Flutter/GeneratedPluginRegistrant.m
 
 # Archived release APKs (install_release.sh)
 apk_archive/
+
+# Local Claude Code settings
+.claude/
